@@ -58,11 +58,6 @@ body {
     animation: containerGlow 3s infinite alternate, fadeIn 1s ease-out;
 }
 
-@keyframes containerGlow {
-    0% { box-shadow: 0 0 30px rgba(0, 242, 254, 0.2); }
-    100% { box-shadow: 0 0 50px rgba(0, 242, 254, 0.4); }
-}
-
 .logo {
     width: 120px;
     display: block;
@@ -87,11 +82,6 @@ h1 {
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
     animation: textGlow 2s infinite alternate, fadeIn 1s ease-out 0.3s both;
-}
-
-@keyframes textGlow {
-    0% { text-shadow: 0 0 10px rgba(0, 242, 254, 0.5); }
-    100% { text-shadow: 0 0 20px rgba(0, 242, 254, 0.8); }
 }
 
 #date {
@@ -170,11 +160,6 @@ strong {
         radial-gradient(circle at 80% 80%, rgba(79, 172, 254, 0.1) 0%, transparent 50%);
     z-index: 1;
     animation: patternMove 20s infinite alternate;
-}
-
-@keyframes patternMove {
-    0% { background-position: 0% 0%; }
-    100% { background-position: 100% 100%; }
 }
 
 /* Touch-friendly animations for mobile */
@@ -260,21 +245,4 @@ strong {
 
 .swipe-right {
     animation: swipeRight 0.3s ease-out;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--dark);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--primary);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary);
-}
+} 
